@@ -3,16 +3,24 @@ There was no change when button was pressed because the function for it wasn't c
 
 
 Task 3:
-Debounce Issue:
+1. Debounce Issue:
 A debounce issue occurs when a mechanical switch (like a button) is pressed or released, causing unintended multiple signals due to physical vibrations or noise. We remove it because it can lead to multiple unintended activations in a single press, causing issues in applications where precise input is required.
 
-Uses:
+2. Uses:
 Embedded systems: Where a single button press should register only one event (e.g., resetting a microcontroller, stopping a motor).
 Keyboards: A key should register only one press, not multiple.
 Industrial control systems: Incorrect inputs from sensors or buttons could cause machinery malfunctions.
 User interfaces (e.g., ATMs, vending machines): Prevents accidental multiple selections.
 
-Why?
+3. Why?
 -The issue may arise from hardware behavior, not code translation.
 -The program may be logically correct but affected by unintended input signals.
 -Cheap or low-quality switches tend to bounce more, but even high-end switches experience it due to their mechanical nature.
+
+
+Task 4:
+1. Why do we use interrupts?
+Interrupts allow the microcontroller to respond to external events (like a button press) immediately instead of constantly checking (polling). This improves responsiveness and efficiency in real-time applications.
+
+2. How does an interrupt lower the processing cost of the microcontroller?
+Without interrupts, the CPU would have to continuously check (poll) the button state, which wastes processing power. With interrupts, the CPU can focus on other tasks and only respond when necessary, reducing unnecessary computations and power consumption.
