@@ -7,7 +7,7 @@ from machine import Pin, SoftI2C
 import ssd1306
 
 # Configuration
-THINGSPEAK_API_KEY = "9ECTMWHIW9662T3N"
+THINGSPEAK_API_KEY = "27STHTU00VAJ5ADC"
 THINGSPEAK_WRITE_URL = "https://api.thingspeak.com/update"
 DHT_PIN = 4
 CHECK_INTERVAL = 20
